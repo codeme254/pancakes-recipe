@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pancakes Recipe</title>
     <link rel="icon" href="./images/logo.jpeg">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="./images/logo.jpeg" alt="logo" width="40px" />
-    <h1>Pancakes Recipe</h1>
+    <div class="container">
+    <div id="logo-title-wrapper">
+        <img src="./images/logo.jpeg" alt="logo" width="40px" />
+        <h1 id="main-title">Pancakes Recipe</h1>
+    </div>
     <h2>What is a pancake?</h2>
     <p>
         A pancake is a flat, round cake made from a simple batter consisting of flour, eggs, milk (or water), and usually a leavening agent such as baking powder. The batter is poured or ladled onto a hot cooking surface, such as a griddle or frying pan, and cooked until the bottom is golden brown. Then, it's flipped and cooked on the other side until both sides are evenly browned and cooked through.
     </p>
     <figure>
-        <img src="./images/pancakes-on-a-plate.jpg" alt="pancakes on a plate" />
+        <img src="./images/pancakes-on-a-plate.jpg" alt="pancakes on a plate" class="figure-img" />
         <figcaption>Delicious pancakes topped with syrup and fresh berries.</figcaption>
     </figure>
 
@@ -59,7 +63,7 @@
         Your pancake will tell you when it's ready to flip. Wait until bubbles start to form on the top and the edges look dry and set. This will usually take about two to three minutes on each side.
     </p>
     <figure>
-        <img src="./images/pancake-flip.jpeg" alt="flipping a pancake" />
+        <img src="./images/pancake-flip.jpeg" alt="flipping a pancake" class="figure-img" />
         <figcaption>A pancake with bubbles on the top meaning it is ready for flipping</figcaption>
     </figure>
 
@@ -70,18 +74,16 @@
 
     <form>
         <label for="fname">First Name</label>
-        <input type="text" id="fname" required />
-        <br /> <br />
+        <input type="text" id="fname" required class="form-input" placeholder="first name eg John" />
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" required />
-        <br /> <br />
+        <input type="text" id="lname" required class="form-input" placeholder="last name eg Doe" />
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" required />
-        <br /> <br />
+        <input type="email" id="email" required class="form-input" placeholder="email address eg johndoe@gmail.com" />
 
-        <button>Am In</button>
+        <button class="submit-button">Am In</button>
     </form>
+</div>
 </body>
 </html>
